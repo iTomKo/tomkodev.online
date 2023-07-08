@@ -1,0 +1,9 @@
+div#contacts {
+    padding-left: 2.5%;
+}
+div#contacts span {
+    padding-left: 3.5%;
+    color: #a19a9a;
+    font-family: Inconsolata;
+    font-size: 20px
+}

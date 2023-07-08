@@ -1,0 +1,43 @@
+body {
+    background-color: #222323;
+}
+
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 20px;
+    color: white;
+}
+p bold {
+    color: #2b9c80;
+    font-weight: bolder;
+}
+p italic {
+    color: #a19a9a;
+}
+
+a {
+    text-decoration: none;
+}
+
+div.space {
+    height: 5px;
+}
+
+.highlight {
+    color: #2b789c;
+    font-family: 'Inconsolata';
+}
+.secondary-highlight {
+    font-family: 'Inconsolata';
+    color: #2b9c80;
+}
+
+.centered-text {
+    text-align: center;
+}
