@@ -1,0 +1,14 @@
+li a {
+    font-family: 'Inconsolata';
+    font-size: 120%;
+
+    color: #6e79b6;
+}
+
+p.directory {
+    font-size: 110%
+}
+
+div#c-walkthrough {
+    padding-top: 1.5%;
+}
