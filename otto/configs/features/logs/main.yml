@@ -1,0 +1,6 @@
+# EXAMPLE:
+#
+# NAME OF THE COMMAND TO LOG
+# tp:
+#   log-spigot: true # Determines if Otto should detect the command execution on spigot server
+#   log-proxy: false # Determines if Otto should detect the command execution on bungeecord server

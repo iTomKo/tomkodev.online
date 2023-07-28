@@ -1,0 +1,3 @@
+#What servers get whitelisted when executing /otto whitelist
+servers:
+  # - Lobby

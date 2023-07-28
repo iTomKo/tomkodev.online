@@ -1,0 +1,9 @@
+timings:
+  #How long should the title (/alerttitle) fade in. IN MILLIS!
+  title-fade-in-time: 250
+
+  #How long should the title (/alerttitle) fade out. IN MILLIS!
+  title-fade-out-time: 250
+
+  #How long should title (/alerttitle) be visible on screen. IN MILLIS!
+  title-display-time: 9000

@@ -1,0 +1,10 @@
+# Example Server Alias Command
+
+#   Survival: #name of the command
+#     enabled: true #whether this alias is enabled
+#     destination: survival #what server to travel
+#     permission: example.survivaljoin #required permission for this command
+#     aliases:
+#       - "surv" #creates alias for this command
+#     connecting: "Connecting to Survival!" #What message to display when connecting to the Server; leave blank for default
+#     connected: "Connected to Survival!" #What message to display when connected to the Server; leave blank for default

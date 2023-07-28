@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otto - Initial Setup</title>
+
+    <link rel="stylesheet" href="/css/primary.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/otto/xsite.css">
+    <link rel="stylesheet" href="/css/otto/setup.css">
+
+    <link rel="stylesheet" href="/css/copyright.css">
+</head>
+<body>
+    <div id="header">
+        <h1>OTTO - Initial Setup</h1>
+        <p>Updated for Otto version: 1.0.1.4</p>
+        <hr>
+    </div>
+
+    <a class="main-page" href="index.html">Go back to the main page</a>
+
+    <div>
+        <p>This setup consists of these parts:</p>
+        <ul>
+            <li><a href="#c-walkthrough">Config Walkthrough</a></li>
+            <li><a href="#localesel">Locale Selection</a></li>
+            <li><a href="#colorpref">Custom Color Prefabs</a></li>
+            <li><a href="#cmdperm">Commands & Permissions</a></li>
+            <li><a href="#discordbot">Setting up Discord Bot</a></li>
+        </ul>
+
+        <span>Click or scroll to your desired part.</span>
+
+        <br>
+        <br>
+        <hr>
+    </div>
+
+    <div id="c-walkthrough">
+        <a class="main-page" href="index.html">Go back to the main page</a>  
+        <h2># Config Walkthrough</h2>
+        
+        <div class="introduction">
+            <div class="colormark" style="background-color: rgb(120,179,86)"></div>
+            <p>There are <span>10 folders</span> and <span>2 additional files</span> to be set-up. Tottaling in <span>26 files</span>.</p>
+            <p>That might sound scary, but most are modified just once in your server existence :D</p>
+            <br>
+        </div>
+
+        <p><bold>TIP: </bold>In need of the original configs? Go to <a href="originalconfigs.html" style="color: burlywood;">this guide!</a></p>
+
+        <div>
+            <br>
+            <span>[!] Its programmatically managed.</span>
+            <span>[*] Its just a template for other configs.</span> <br>
+            <span>[1] Its planned to be converted into centralized database.</span>
+            <span>[2] Its locale file, meant to be modified to match your needs</span>
+        </div>
+        <p>Folders and their files, including their purpose <span>(click for more info)</span>:</p>
+
+        <p class="directory">./</p>
+        <ul>
+            <li><a href="/otto/individualconfigs/config.html">config.yml</a> - General OTTO settings</li>
+            <li><a href="/otto/individualconfigs/commands.html">commands.yml</a> - Settings for each avalaible command</li>
+        </ul>
+
+        <p class="directory">./core</p>
+        <p class="directory-use">Contains <bold>Core</bold> files.</p>
+        <ul>
+            <li><a href="/otto/individualconfigs/core/motd.html">motd.yml</a> - Adding/Removing server motds</li>
+            <li><a href="/otto/individualconfigs//core/permissions.html">permissions.yml</a> - Adjusting required permissions for some action</li>
+            <li><a href="/otto/individualconfigs/core/servers.html">servers.yml</a> - Creating server travel aliases. e.g.: <span>/survival</span></li>
+            <li><a href="/otto/individualconfigs/core/whitelist.html">whitelist.yml</a> - Adding/Removing servers to be whitelisted via global whitelist toggle</li>
+        </ul>
+
+        <p class="directory">./discord</p>
+        <p class="directory-use">Stores files required for 100% functionality of <bold>Discord Bot</bold></p>
+        <ul>
+            <li><a href="/otto/individualconfigs/discord/cache.html">cache.yml</a> - <span>[!]</span> Do not edit; Linked User cache</li>
+            <li><a href="/otto/individualconfigs/discord/discord.html">discord.yml</a> - Contains required information for the Discord Bot</li>
+            <li><a href="/otto/individualconfigs/discord/roles.html">roles.yml</a> - Adding new auto-sync discord roles depending on ingame permission</li>
+        </ul>
+
+        <p class="directory">./features</p>
+        <p class="directory-use">Stores all features <bold>(aka modules)</bold> and their settings</p>
+        <ul>
+            <li><a href="/otto/individualconfigs/features/alerts.html">alerts.yml</a> - Here you set durations of all non-preset alerts</li>
+            <li><a href="/otto/individualconfigs/features/features.html">features.yml</a> - Here you toggle what features you want to be enabled/disabled</li>
+            <p class="directory">./contests</p>
+            <p class="directory-use">Stores required data for <bold>contests</bold></p>
+            <ul>
+                <li><a href="/otto/individualconfigs/features/contests/config.html">config.yml</a> - <span>[!]</span> Programmatically managed; Here are all contests stored</li>
+            </ul>
+            <p class="directory">./limitation</p>
+            <p class="directory-use">Limitation <bold>setting</bold></p>
+            <ul>
+                <li><a href="/otto/individualconfigs/features/limitation/config.html">config.yml</a> - Here you specify what commands you want to limit</li>
+                <li><a href="/otto/individualconfigs/features/limitation/entries.html">entries.yml</a> - <span>[!] [1]</span> Programmatically managed; Stores data about current use status for each player</li>
+            </ul>
+            <p class="directory">./logs</p>
+            <p class="directory-use">Logging <bold>setting</bold></p>
+            <ul>
+                <li><a href="/otto/individualconfigs/features/logs/main.html">main.yml</a> - Here you specify what commands you want to log</li>
+            </ul>
+            <p class="directory">./statistics</p>
+            <p class="directory-use"><bold>Stores required data</bold> for statistics computation</p>
+            <ul>
+                <li><p class="disclaimer">[!] [1] All the files are programmatically managed; Do not modify them, unless told to do so.</p></li>
+            </ul>
+        </ul>
+        <p class="directory">./logs</p>
+        <p class="directory-use">This folder <bold>stores logs</bold> (messages sent, groupchat actions and commands executed)</p>
+
+        <p class="directory">./presets</p>
+        <p class="directory-use">Used for <bold>creating simple presets</bold>, so you don't have to type out .. manually everytime</p>
+        <ul>
+            <li><a href="/otto/individualconfigs/features/presets/example_title.html">example_title.yml</a> - [*]; Preset for a simple title.</li>
+        </ul>
+
+        <p class="directory">./translations</p>
+        <p class="directory-use">Used for <bold>translations and changing message pattern</bold> for each OTTO action.</p>
+        <ul>
+            <li><a href="/otto/individualconfigs/translations/locale_CZ.html">locale_CZ.yml</a> - [2]</li>
+            <li><a href="/otto/individualconfigs/translations/locale_EN.html">locale_EN.yml</a> - [2]</li>
+        </ul></div>
+
+    <br>
+    <div id="localesel">
+        <a class="main-page" href="index.html">Go back to the main page</a>  
+        <h2># Locale Selection</h2>
+        
+        <div class="introduction">
+            <div class="colormark" style="background-color: rgb(58,238,178)"></div>
+            <p>Changing locale is easier, thanks to the previous config knowledge.</p>
+            <br>
+        </div>
+        
+        <p>But first, what locales are currently avalaible (original)?</p>
+        <ul>
+            <li><a>locale_EN</a></li>
+            <li><a>locale_CZ</a></li>
+        </ul>
+
+        <p class="directory">Changing the locale</p>
+        <ol>
+            <li><p>Navigate to <bold>Otto</bold> folder.</p></li>
+            <li><p>Open the <bold>config.yml</bold> with IDE of your choice.</p></li>
+            <li><p>At the top of the file, there will be a <bold>"locale"</bold> option.</p></li>
+            <li><p>Change its value to any locale you want. Otto looks for the file name, so you can create your own locales!</p></li>
+            <li><p>Reload Otto or Restart the server to apply changes!</p></li>
+        </ol>
+
+        <img src="./images/setup/locale.png" alt="Visual representention of what line to change"/>
+    </div>
+
+    <br>  
+    <div id="colorpref">
+        <a class="main-page" href="index.html">Go back to the main page</a>  
+        <h2># Custom Color Prefabs</h2>
+        
+        <div class="introduction">
+            <div class="colormark" style="background-color: rgb(124,99,124)"></div>
+            <p>What even are color prefabs? Color prefabs can be used <bold>ANYWHERE</bold> inside Otto.</p>
+            <p>For example; need to rebrant your server to different color scheme? You don't have to change all the color codes manually! Just change prefabs value and it will change!</p>
+            <br>
+            <p>They can be also used inside commands!</p>
+            <p>Example: <span>/staffchat &lt;&lt;primary&gt;&gt;Wow! This message is colored!</span></p>
+            <img src="./images/setup/color-prefabs.png" alt="Showcase of prefabs inside staff chat"/>
+            <p><bold>NOTE:</bold> The tag is replaced with the HEX code, therefore in gradients you don't need to include additional brackets, but in places, that require
+                 <span>&lt;,&gt;</span>, you have to.</p>
+            <br>
+        </div>
+
+        <p class="directory">Where to look?</p>
+        <li><a href="#config.yml">Look inside <span>config.yml!</span></a></li>
+        <img src="./images/setup/color-prefabs-ide.png" alt="Piece of code inside IDE"/>
+
+        <p class="directory">How to add custom colors?</p>
+        <li><a>Just add another line, that will be have the name of the color and assign its color!</a></li>
+        <img src="./images/setup/color-prefabs-custom.png" alt="Showcase of custom color preset inside IDE!"/>
+
+        <p class="directory">Can I change default (MiniMessage) colors?</p>
+        <li><a>Yes, you can! Do the same you would with custom color, but name it as the <span>MiniMessage</span> color!</a></li>
+        <img src="./images/setup/color-prefabs-override-mm.png" alt="Showcase of MiniMessage color override inside IDE!"/>
+    </div>
+
+    <br>  
+    <div id="cmdperm">
+        <a class="main-page" href="index.html">Go back to the main page</a>  
+        <h2># Commands & Permissions</h2>
+
+        <div class="introduction">
+            <div class="colormark" style="background-color: rgb(180, 56, 56);"></div>
+            <p>Otto consist of lots of different commands and permissions. Some names can be confusing, because they are shortened.</p>
+            <p>Due to that, we will now take look at Otto's commands and than permissions.</p>
+            <br>
+        </div>
+
+        <p class="directory">Different types of command setting:</p>
+        <ol>
+            <li><a href="#cmdset1">Managing their properties <span>- aliases, standalone status</span></a></li>
+            <li><a href="#features">Toggling them via <span>features.yml</span></a></li>
+        </ol>
+
+        <div id="cmdprop">
+            <a class="main-page" href="index.html">Go back to the main page</a>  
+            <h2>## Managing Command properties</h2>
+            <p class="directory">Lets open commands.yml located in root directory of Otto</p>
+            <img src="./images/setup/cmd-properties.png" alt="Showcase of code from IDE!"/>
+    
+            <p>You probably know what it does just from reading it. But in case you don't, we will go through all the options.</p>
+            <ol>
+                <li><a>name - defines the name under which the command is registered into md-5's command tables. <span>[!] Experimental</span></a></li>
+                <li><a>aliases - here you specify aliases for the given command; leave empty <span>-   </span> for no alias</a></li>
+                <li><a>standalone - whether the command should be standalone; Standalone commands do not require the <span>/otto </span> prefix <br>
+                     and can be executed directly via <span>/&lt;command-name&gt;</span>.</a></li>
+            </ol>
+            <hr>
+        </div>
+
+        <div id="cmdfeatures">
+            <a class="main-page" href="index.html">Go back to the main page</a>  
+            <h2>## Toggling commands via features.yml</h2>
+            <p class="directory">What even are features in the first place?</p>
+            <li><a href="#features">Features, also known as <span>Modules</span>, are package of function mostly combined with command.</a></li>
+    
+            <p class="directory">Toggling some features on/off.</p>
+            <p>Open the <span>features.yml</span> located in <span>./features/</span> in IDE of your choice.</p>
+            <p>Now you can see all the features, some of them being disabled and most enabled.</p>
+            <br>
+    
+            <p class="demo">: Lets try to enable /helpop!</p>
+            <p>Look for <span>"helpop"</span> via <span>CTRL + F</span>.</p>
+            <p>Now change the <span style="color: rgb(134, 30, 30)">false</span> value into <span style="color: rgb(87, 122, 33)">true</span>.</p>
+    
+            <p>After reloading Otto or restarting the server, you will now have helpop enabled!</p>
+            <br>
+            <hr>
+            <p><bold>NOTE:</bold> some features require other features to be enabled.</p>
+            <p>You can see what features are required via <span>/otto features</span> and hovering over the feature.</p>
+        </div>
+    </div>
+
+    <div id="discordbot">
+        <a class="main-page" href="index.html">Go back to the main page</a>  
+        <h2># Setting up Discord Bot</h2>
+
+        <div class="introduction">
+            <div class="colormark" style="background-color: #7289da;"></div>
+            <p>If you want to have automated linked roles or rewards for linking accounts, setup discord bot!</p>
+            <br>
+        </div>
+
+        <p class="directory">This guide consists of these parts:</p>
+        <ol>
+
+            <li><a href="#dcmain">Setting up <span>discord.yml</span>.</a></li>
+            <ul>
+                <li><a href="#dclinkcmd">Post Discord Link Commands</a></li>
+            </ul>
+            <li><a href="#dcroles">Setting up <span>linked roles</span></a>.</li>
+            <li><a href="#dcpanel">What is admin panel?</a></li>
+            <li><a href="#dcmccmd">Usefull commands</a></li>
+        </ol>
+        <hr>
+
+        <div id="dcmain">
+            <a class="main-page" href="index.html">Go back to the main page</a>  
+            <h2>## Setting up discord.yml</h2>
+
+            <div class="introduction">
+                <p>This is crucial step for Discord bot to work!</p>
+                <p>Having discord bot token is a prerequisition!</p>
+                <br>
+            </div>
+
+            <p class="directory">Open up <span>discord.yml</span> inside <span>./discord</span>.</p>
+            <p>You will see this:</p>
+            <img src="./images/setup/discord-config.png" alt="Showcase of the config" style="margin-top: .5%"/>
+
+            <p>Now instead of the <span>TOKEN</span> place your discord bot's token.</p>
+
+            <hr>
+
+            <div id="dclinkcmd">
+                <a class="main-page" href="index.html">Go back to the main page</a>  
+                <h2>### Post Discord Link Commands</h2>
+
+                <p class="directory">In the image mentioned above, we can see example command.</p>
+                <p>In order to use players nick inside the command; use the placeholder <span>%player%</span>.</p>
+                <p><italic>TIP: </italic>if you want to execute post link command on selected server, use the <span>execute on server </span>utility command!</p>
+            </div>
+        </div>
+
+        <hr>
+        <div id="dcroles">
+            <a class="main-page" href="index.html">Go back to the main page</a>  
+            <h2>## Setting up linked roles</h2>
+
+            <div class="introduction">
+                <p>Having discord bot set-up is a prerequisition!</p>
+                <br>
+            </div>
+
+            <p class="directory">In the <span>./discord</span> directory open <span>roles.yml</span></p>
+            <img src="./images/setup/discord-roles.png" alt="Screenshot of the config" style="margin-top: .5%"/>
+
+            <p>Firstly fill in the <span>default</span> section.</p>
+            <a href="https://www.itgeared.com/how-to-get-role-id-on-discord/" style="color: aquamarine">Guide on getting the required Discord IDs (CLICK)</a>
+            <br>
+            <hr>
+            <p>From the config you get the most info about the linkage, but here it will be more descriptive.</p>
+            <div class="code-preview">
+                <p><span class="line">1.</span><span> &lt;name of the role (only for impoved readiability)&gt;</span></p>
+                <p><span class="line">2.</span>      id: <span>&lt;id of the role from discord&gt;</span></p>
+                <p><span class="line">3.</span>      permission: <span>&lt;required permission, for player to be given this role&gt;</span></p>
+            </div>
+
+            <p><italic>TIP:</italic> Making the name of the linked role more descriptive makes it easier later on to debug or change something.</p>
+            <p><italic>TIP:</italic> Want to apply changes to the discord role linkage without server restart? Reload discord features via <span>/otto dreload</span>.</p>
+            <p><bold>NOTE:</bold> The role WILL be removed after next player's login to the server without the required permission.</p>
+            <p><bold>NOTE:</bold> The role WILL be added after first login with the required permission.</p>
+        </div>
+
+        <hr>
+        <div id="dcpanel">
+            <a class="main-page" href="index.html">Go back to the main page</a>  
+            <h2>## What is Admin Panel?</h2>
+
+            <div class="introduction">
+                <p>Having discord bot set-up with <span>admin-panel</span> feature enabled is a prerequisition!</p>
+                <br>
+            </div>
+
+            <p class="directory">Admin Panel, as name suggests, is panel meant for server admins.</p>
+            <p>When enabled, just simply type <span>.panel</span> into any channel inside your Discord Server!</p>
+            <p><bold>[!] NOTE:</bold> Anyone can "touch" the panel, therefore DO NOT create it inside public channels! <br>
+                 Only users with server administration permission can create the panel</p>
+            <br>
+            <p>Showcases:</p>
+            <img src="./images/setup/discord-panel-1.png" alt="Showcase of the Admin Panel" style="margin-top: .5%"/>
+            <img src="./images/setup/discord-panel-2.png" alt="Showcase of the Admin Panel" style="margin-top: .5%"/>
+            <img src="./images/setup/discord-panel-3.png" alt="Showcase of the Admin Panel" style="margin-top: .5%"/>
+
+            <p>Future expansions of this feature are planned!</p>
+
+        </div>
+        <hr>
+        <div id="dcmccmd">
+            <a class="main-page" href="index.html">Go back to the main page</a>  
+            <h2>## Usefull commands</h2>
+
+            <div class="introduction">
+                <p>These are usefull commands and features connected with discord!</p>
+                <p>Required feature <span>discord-bot</span> to be enabled, inluding successfull discord bot boot</p>
+                <br>
+            </div>
+
+            <p class="directory">/otto info &lt;nick&gt;</p>
+            <li>Shows you whether the player is linked and their discord username, if present.</li>
+            <br>
+
+            <p class="directory">/otto unlink &lt;nick&gt;</p>
+            <li>Unlinks the player, if the player is already linked.</li>
+            <br>
+
+            <p class="directory">/otto dreload &lt;bot&gt;</p>
+            <li>Lets you reload discord related configs or/and discord bot (determined by having the <span>bot</span> tag.</li>
+            <br>
+
+            <p class="directory">Discord User context menu -> Link Status</p>
+            <li>Lets you see same information as ingame /otto info</li>
+            <img src="./images/setup/discord-contextmenu-1.png" style="margin-top: .5%; display: block;"/>
+            <img src="./images/setup/discord-contextmenu-2.png" style="margin-top: .5%; display: block;"/>
+            <img src="./images/setup/discord-contextmenu-3.png" style="margin-top: .5%;"/>
+
+            <br>
+        </div>
+    </div>
+    
+    <div class="copyright">
+        <p>Made by TomKo  [2023]</p>
+        <p>Updated: 7.27.2023 | 22:00</p>
+    </div>
+</body>
+</html>

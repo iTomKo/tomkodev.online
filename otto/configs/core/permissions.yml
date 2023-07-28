@@ -1,0 +1,92 @@
+#Operator Permissions
+
+#Players with this Permission can reload the plugin
+reload: otto.reload
+#Players with this Permission can restart the plugin
+restart: otto.restart
+#Players with this Permission are marked as Staff Members
+staff-member: otto.staff
+#Players with this Permission are marked as Plugin Operators
+plugin-operators: otto.plugin.operator
+#Players with this Permission can use the main command: /otto
+otto: otto.otto
+
+#Permissions meant for admins
+admin:
+  debugger: otto.debugger
+
+  #Players with this Permission will enable the debugger automatically on join
+  debugger-default-enabled: otto.debugger.defenable
+  features: otto.features
+  version: otto.version
+
+  contest-manage: otto.contest.manage
+
+  development:
+    #Players with this command can use the 'exserver' command; executes command on Bukkit-based server with OttoCommunicator installed
+    execute-on-server: otto.development.exserver
+    #Players with this command can use the 'whitelist' command; turns on whitelist on all Bukkit-based servers with OttoCommunicator installed and with players
+    server-whitelist: otto.development.whitelist
+
+  monitoring:
+    lag: otto.monitoring.lag
+
+#Permissions meant for staff members
+staff:
+  log: otto.log
+
+  alert:
+    chat: otto.alert.chat
+    title: otto.alert.title
+
+  #Staff Chat
+  chat: otto.staff.chat
+  #Staff List
+  list: otto.staff.list
+
+  concentration: otto.player.concentration
+  #AKA appearance
+  players: otto.player.appearance
+
+#Permissions meant for players
+players:
+  messaging:
+    message: otto.global.msg.send
+    reply: otto.global.msg.reply
+    group-chat: otto.global.groupchat
+
+    spy: otto.global.msg.spy
+    ignore: otto.global.msg.ignore
+    streamer-mode: otto.global.streamermode
+
+  statistics: otto.statistics
+
+  #Required Permission to access all shortcut server commands. e.g.: /survival, /pvp
+  server-join-global: otto.server.join.global
+
+  helpop:
+    list: otto.helpop.list
+    ask: otto.helpop.ask
+
+#Discord-related & command-related permissions
+discord:
+  discord-reload: otto.discord.reload
+  #Required for /link
+  discord-link: otto.discord.link
+  discord-unlink: otto.discord.unlink
+  discord-info: otto.discord.info
+
+#Permissions for force actions
+force:
+  group-chat-join: otto.force.groupchat.join
+
+#Permissions for bypasses
+bypass:
+  #Players with this permission can see vanished players
+  staff-list-visibility-bypass: otto.bypass.staff.list
+  #Players with this permission can send messages to players in streamermode
+  streamer-mode-bypass: otto.bypass.streamermode
+  #Players with this permission don't get affected by command use limitation
+  command-limitation-bypass: otto.bypass.limitation.command
+  #Hide disabled commands from tab complete
+  disabled-tab-complete-bypass: otto.bypass.tabcomplete

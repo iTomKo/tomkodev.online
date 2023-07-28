@@ -1,0 +1,11 @@
+default:
+  linked-id: 0 #ID of role to assign when user links their account
+  guild-id: 0 #ID of the guild/server, so the bot can find the role
+
+#
+# EXAMPLE ROLE LINKAGE
+#
+# vip:
+#   id: 123012030001230 # ID of the role to assign
+#   permission: otto.discord.vip # What permission is required to assign the role
+#

@@ -1,0 +1,17 @@
+# What type of preset is this preset
+# ALERT
+type: ALERT
+
+# Where to display the preset
+# TITLE / CHAT
+display: TITLE
+
+# Only 2 lines are required for Title
+data:
+  - '<primary>This is a title'
+  - '<secondary>This is a subtitle'
+
+# [OPTIONAL] Timings
+time-fade-in: 500 # milliseconds
+time-stay: 5000 # milliseconds
+time-fade-out: 500 # milliseconds

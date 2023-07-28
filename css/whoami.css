@@ -1,0 +1,38 @@
+div#whoami {
+    padding-left: 2.5%;
+}
+div#whoami p {
+    padding-left: 3.5%;
+}
+
+div#whoami span#c-types {
+    text-decoration: overline;
+    text-decoration-color: #2b9c80;
+}
+div#whoami span#c-types:hover {
+    box-shadow: 0 0 0 4px #222323,
+                0 0 0 6px #2b789c;
+}
+
+div.c-tooltip span#tooltip {
+    position: fixed;
+    display: block;
+
+    opacity: 0;
+    visibility: hidden;
+
+    background: #2b9c80;
+    color: #fff;
+
+    font-family: Inconsalata;
+    font-weight: 700;
+    font-size: 15px;
+
+    padding: 5px 20px;
+    box-shadow: 0 8px 10px rgba(0,0,0,.1);
+}
+
+div#whoami div.c-tooltip span#tooltip:hover {
+    opacity: 1;
+    visibility: visible;
+}

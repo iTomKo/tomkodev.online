@@ -1,0 +1,384 @@
+#
+
+#
+
+# For easier coloring, use minimessage parsing. Bukkit colors are also supported!
+
+# https://docs.advntr.dev/minimessage/index.html
+
+#
+
+# OFFICIAL CZECH TRANSLATION - iTomKo
+
+#
+
+#
+
+#
+
+#
+
+#
+
+insufficient-permissions: "<#e61000>Nemáš dostatečná oprávnění na tento příkaz!"
+argument-expected: "<#e61000>Je vyžadován argument!"
+unknown-command: "<#e61000>Neznámý příkaz"
+
+otto:
+  restart: <#fb0c0c>⌇<#fb1717>⌇ &fOTTO se nyní restartuje!
+  restarted: <#fb0c0c>⌇<#fb1717>⌇ &fOTTO dokončil restart!
+
+msg:
+  specify-player: <#e61000>Prosím, uvěd příjemce!
+  specify-message: <#e61000>Prosím, uvěd zprávu příjemci!
+  no-player-found: <#e61000>Systém nemohl najít tohoto hráče!
+  messenger-template: <#57e600>↑ <#e60000>✉ &f%player% <#57e600>→ &f%to%
+    <#808080>» &f%message%
+  receiver-template: <#e6cf00>↓ <#e60000>✉ &f%player% <#e6cf00>→ &f%to%
+    <#808080>» &f%message%
+
+msg-ignore:
+  argument-required:
+    - ''
+    - '<#e61000>Prosím, uveď argumenty potřebné u tohoto příkazu!'
+    - ''
+  already-ignored:
+    - ''
+    - '<#e61000>Tohoto hráče již máš v seznamu!'
+    - ''
+  not-ignored:
+    - ''
+    - '<#e61000>Tohoto hráče nemáš v seznamu!'
+    - ''
+  added-to-list:
+    - ''
+    - '<#fb0c0c>⌇<#fb1717>⌇ <#81e600>Systém přidal hráče &f%player% <#81e600>do tvého seznamu ignoru!'
+    - ''
+  removed-from-list:
+    - ''
+    - '<#fb0c0c>⌇<#fb1717>⌇ <#81e600>Systém odebral hráče &f%player% <#81e600>z tvého seznamu ignoru!'
+    - ''
+  list-beginning: <gradient:#fb3333:#f18e8e>&lʟɪꜱᴛ ɪɢɴᴏʀᴜ</gradient>
+  list-entry: '&r <#fb0c0c>⌇<#fb1717>⌇ &f%player%<newline>'
+  list-cleared:
+    - ''
+    - '<#fb0c0c>⌇<#fb1717>⌇ <#81e600>Tvůj seznam byl vyčištěn!'
+    - ''
+
+msg-spy:
+  template: <#707070>[<#e62900>Spy<#707070>] &f%sender% <#707070>» <#D7D131>%receiver%
+    <#707070>» <#707070>%message%
+
+msg-reply:
+  no-open-conversation:
+    - ''
+    - '<#e61000>První někomu musíš napsat, abys mohl odpovědět!'
+    - ''
+  conversation-changed-title: <#fb3333>TVÁ POSLEDNÍ KONVERZACE SE ZMĚNILA!
+  conversation-changed-subtitle: <#9F9FD9>%from% <#808080>» <#9F9FD9>%to%
+
+alert:
+  alert-msg: '%alert-prefix% &8%message%'
+  prefix: '&f[&7ALERT&f]'
+  chat-hover: '<<accent>>Kliknutím uskutečníš zmíněnou akci!'
+  specify-click-event: <#e61000>Upřesni co se má stát po kliknuti
+  removed-click-event: <#e61000>Click event byl smazán
+  specified-click-event: <#AFDF00>Click event byl nastaven
+
+staff-chat:
+  from-player: <#808080>[<#e60000>AT<#808080>] <#808080>{<#05e600>%server%<#808080>}
+    <#808080>| <#e67c00>%player% <#808080>» <#e60000>%message%
+  from-console: <#808080>[<#e60000>AT<#808080>] <#808080>| <#e67c00>CONSOLE <#808080>»
+    <#e60000>%message%
+  enabled-staff-chat-toggle: <#AFDF00>Nyní mluvíš do <#e61000>staff chatu<#AFDF00>!
+  disabled-staff-chat-toggle: <#AFDF00>Nyní mluvíš do normálního chatu!
+
+staff-list:
+  beginning:
+    - ''
+    - '<gradient:#fb3333:#f18e8e>&lꜱᴛᴀꜰꜰ ʟɪꜱᴛ</gradient>'
+    - ''
+  entry: '%prefix% &f%player% <#808080>» <#AFDF00>%server%'
+  entry-vanished: '%prefix% &f%player% <#707070>[V] <#808080>» <#AFDF00>%server%'
+
+concentration:
+  beginning:
+    - ''
+    - '&l<gradient:#48DAA2:#00A7C5>ᴄᴏɴᴄᴇɴᴛʀᴀᴛɪᴏɴ</gradient></bold>'
+    - ''
+    - '<#808080>[Online: &f%concentration-online%<#808080> Servery: &f%concentration-servers%<#808080>]'
+    - ''
+  pattern: '<#AFDF00>%server% &r%bar% &r<#808080>[&f%players-online%<#808080>: &f%staff-online%<#808080>]'
+
+player-appearance:
+  beginning: '&l<gradient:#FF9671:#FF6F91>ᴀᴘᴘᴇᴀʀᴀɴᴄᴇ</gradient>&r'
+  pattern: '&r<#AFDF00>%server% &f[%players-online%] &r<#808080>» <gray>%players%'
+
+contest:
+  join-determined-way: <#e61000>Prosím, pokus se připojit určenou cestou!
+  select-contest: <#e61000>Prosím, zadej do jaké soutěže se chceš připojit!
+  joined-contest: <#AFDF00>Úspěšně jsi se připojil do soutěže!
+  already-joined: <#e61000>Již jseš zapojen do soutěže!
+  no-longer-pending: <#e61000>Tato soutěž již neprobíhá!
+  no-contest-existing: <#e61000>Žádná soutěž s tímto jménem neexistuje!
+  contest-winner-template: '&f&l%player% &r<#AFDF00>vyhrál soutěž!'
+
+server-join:
+  no-such-server: <#606060>[&cSystém<#606060>] &cTento server neexistuje!
+  not-permitted: <#606060>[&cSystém<#606060>] &cNemáš dostatečné oprávnění na
+    připojení na tento server!
+  already-joined: <#606060>[&cSystém<#606060>] &cJiž se nacházíš na tomto externím
+    serveru!
+  joined: <#606060>[&cSystém<#606060>] <#707070>Byl jsi přepojen na <#81e600>%server%!
+  connecting: <#606060>[&cSystém<#606060>] <#707070>Přepojujeme tě na <#81e600>%server%!
+
+server-whitelist:
+  beginning: <newline><gradient:#fb3333:#fd6f6f>&lᴘᴏᴍᴏᴄ</bold></gradient>
+  entry: <#fb0c0c>⌇<#fb1717>⌇ <#AFDF00>%server%
+
+streamer-mode:
+  enabled: <#AFDF00>Zapl sis &fStreamer Mode!
+  disabled: <#AFDF00>Vypl jsi &fStreamer Mode!
+
+helpop:
+  sent-hover:  "<#AFDF00>Kliknutím se přemístíš k hráči"
+  sent-template:
+    - ''
+    - '<gradient:#fb3333:fd6f6f>&lᴘᴏᴍᴏᴄ</bold></gradient>'
+    - ''
+    - ''
+    - '<#fb0c0c>⌇<#fb1717>⌇ &fHráč <#AFDF00>%player% &fpožádal o pomoc.'
+    - ''
+    - '<#fb0c0c>⌇<#fb1717>⌇ &fText zprávy: <#AFDF00>%request%'
+    - ''
+
+  # Additional Placeholders:
+  # time-ago
+  # time-sent
+  # 
+  list-template:
+    - ''
+    - '<#fb0c0c>⌇<#fb1717>⌇ &fHráč <#AFDF00>%player%&f: <#AFDF00>%request% <#707070>[&f%time-ago%<#707070>]'
+    - ''
+
+  argument-expected: <#e61000>Zadej prosím svůj problém!
+  no-request-to-submit: <#e61000>Napiš první svůj požadavek o pomoc!
+  confirm-send:
+    - ''
+    - '<gradient:#fb3333:#fd6f6f>&lᴘᴏᴍᴏᴄ</bold></gradient>'
+    - ''
+    - ''
+    - '<#fb0c0c>⌇<#fb1717>⌇ &fJste si jist že chcete zaslat žádost o pomoc?'
+    - '<#fb0c0c>⌇<#fb1717>⌇ <#eb514c>ᴢɴᴇᴜᴢɪᴛɪ ꜱᴇ ᴛʀᴇꜱᴛᴀ!'
+    - ''
+  click-to-send: <#AFDF00>➥ <#AAFF00>Klikni zde pro odeslání žádosti
+  helpop-sent:
+    - ''
+    - '<gradient:#fb3333:#fd6f6f>&lᴘᴏᴍᴏᴄ</bold></gradient>'
+    - ''
+    - '<#fb0c0c>⌇<#fb1717>⌇ &fŽádost odeslána!'
+    - ''
+
+discord:
+  already-linked: <#e61000>Již máš propojený Discord účet!
+  request: <#AFDF00>Aby sis mohl propojit účet, napiš na našem &fDiscordu <#AFDF00>do
+    chatu &f/link!
+  offline: <#e61000>Náš Discord Bot není aktuálně k dispozici!
+
+discord-prompt:
+  in-game:
+    - ''
+    - '&fTvůj ověřovací kód je: <#81e600>&l%code%</bold>'
+    - '<#fb0c0c>⌇<#fb1717>⌇ &fZa <#81e600>15 vteřinách &fho zadej'
+    - '<#fb0c0c>⌇<#fb1717>⌇ &fdo chatu s naším Discordovým Botem.'
+    - ''
+    - '<#fb0c0c>⌇<#fb1717>⌇ &fPokud-li sis nevyžádal tento kód, ignoruj jej.'
+  promptedDiscord: <#FFFFFFF>Právě ti na Discordu napsal náš Discord Bot!
+  cant-prompt-discord: <#e61000>Náš bot tě nedokázal kontaktovat, nejspíš máš zakázané
+    zprávy!
+
+discord-messages:
+  input-key: Prosím, zašli sem do tohoto kanálu kód, který se ti objevil v chatu na
+    našem serveru!
+  no-request-created: Nemáš vytvořený žádný požadavek na propojení účtu, proto tuto
+    zprávu nezpracuji!
+  unmatching-code: Tento kód se neshoduje s kódem, který jsem ti zaslal v Minecraftu!
+  resetting-request: Resetuji požadavek!
+  code-match: Kód se shoduje..
+  initializing-connection: Navazuji spojení se serverem..
+  linked: Tvůj Minecraftový učet **%mc%** byl propojen s **%dc%**..
+
+discord-error:
+  no-guild: 'Internal Error 0xFF0A01: Null Guild'
+  no-member: 'Internal Error 0xFF0B02: Null Member; nejspíš nejste připojeni na našem Discord Serveru! Pokud jste,'
+  report-to-admin: Nahlašte prosím tuto chybu administrátorovi na našem officiálním Discord Serveru!
+
+discord-info:
+  info:
+    - ''
+    - '<gradient:#B8E067:#78C664>&lɪɴꜰᴏ&r'
+    - ''
+    - '<#AFDF00>Propojen: &r<#78C664>%linked%&r'
+    - '<#AFDF00>Online: &r<#78C664>%online%&r'
+    - '<#AFDF00>Nick: &r<#78C664>%player%&r'
+    - ''
+
+discord-ingame:
+  roles-synchronized: <#81e600>Tvé role byly synchronizovány..
+
+debugger:
+  enabled: <#fb0c0c>⌇<#fb1717>⌇ &fDebugger byl <#AFDF00>zapnut!
+  disabled: <#fb0c0c>⌇<#fb1717>⌇ &fDebugger byl <#e61000>vypnut!
+  template: <#fb0c0c>⌇<#fb1717>⌇ <#899499>[DEBUGER] &f %message%
+  template-component: '<#fb0c0c>⌇<#fb1717>⌇ <#899499>[DEBUGER] &f '
+
+statistics:
+  generated-result-template:
+    - ''
+    - '<#404040> ┌─────────────────'
+    - '<#404040> │'
+    - '<#404040> │       &l<#899499><italic>#&r&l<#00BFFC>sᴛᴀᴛs&r'
+    - '<#404040> │  &f%player% <#899499>: &f%date%'
+    - '<#404040> │  <#707070>╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍'
+    - '<#404040> │'
+    - '<#404040> │  <#AFDF00>Připojen<#899499>: &f%joined-times%&fx'
+    - '<#404040> │ <#AFDF00>Odeslané Zprávy<#899499>: &f%chats-sent%'
+    - '<#404040> │ <#AFDF00>Soukromé Zprávy<#899499>: &f%messages-sent%'
+    - '<#404040> │ '
+    - '<#404040> └─────────────────'
+
+version-command:
+  info:
+    - ''
+    - '<gradient:#FF9671:#FF6F91>&lᴏᴛᴛᴏ&r<newline>'
+    - ''
+    - '&fVerze: <#F3D624>%version%'
+    - '&fVerze: <#F3D624>%version-long%'
+    - '&fVyvíjel: <#F3D624>iTomKo'
+    - ''
+    - '&fJazyk: <#F3d624>CZ <gray>| <#F3d624>iTomKo'
+    - ''
+
+log-lookup:
+  user-unspecified: <#e61000>Uživatel nebyl specifikován!
+  time-unspecified: <#e61000>Čas nebyl specifikován!
+  
+  looking-up-log:
+    - ''
+    - '<#909090>[Log Lookup: &fUser <#81e600>%user% &fTime <#81e600>%time% &fUpload <#81e600>%upload% &fReverse-Order <#81e600>%reverse_order%<#909090>]'
+    - ''
+  processing: <newline><#fb0c0c> ⌇<#fb1717>⌇ &fZpracovávám data..
+  error-occurred: <newline><#fb0c0c> ⌇<#fb1717>⌇ <#e610000>Vyskytla se chyba při zpracovávání
+    daného logu!
+  log-result-beginning: <newline><#fb0c0c> ⌇<#fb1717>⌇ <#81e600>Výsledky hledání..<newline>
+  msg-entry: '<newline><#fb0c0c> ⌇<#fb1717>⌇ &f%timestamp% <#81e600>[MSG] &f%player%
+    <#909090> > &f%to%: <#606060>%message%'
+  staff-chat-entry: '<newline><#fb0c0c> ⌇<#fb1717>⌇ &f%timestamp% <#81e600>[AT]
+    &f%player%: <#606060>%message%'
+  group-chat-left-entry: <newline><#fb0c0c> ⌇<#fb1717>⌇ &f%timestamp% <#0085e6>[GC]
+    &f%player% left
+  group-chat-invited-entry: <newline><#fb0c0c> ⌇<#fb1717>⌇ &f%timestamp% <#0085e6>[GC]
+    &f%player% invited %whom%
+  group-chat-kick-entry: <newline><#fb0c0c> ⌇<#fb1717>⌇ &f%timestamp% <#0085e6>[GC]
+    &f%player% kicked %whom%
+  group-chat-joined-entry: <newline><#fb0c0c> ⌇<#fb1717>⌇ &f%timestamp% <#0085e6>[GC]
+    &f%player% joined
+  group-chat-chat-entry: '<newline><#fb0c0c> ⌇<#fb1717>⌇ &f%timestamp% <#0085e6>[GC]
+    &f%player%: <#606060>%message%'
+
+  #Appears as the Paste name
+  upload-name-player: Log vytvořil %player%
+  #Appears as the Paste name
+  upload-name-console: Log vytvořen Konzolí
+
+log-lookup-info:
+  error-login-halt: <newline><#fb0c0c> ⌇<#fb1717>⌇ <#e61000>Vyskytla se chyba při
+    přihlašování na poskytovatele.. Nahrávání se ruší!
+  error-logout: <newline><#fb0c0c> ⌇<#fb1717>⌇ <#e61000>Vyskytla se chyba při odhlašování
+    vzdáleného poskytovatele!
+  current-uploading: <newline><#fb0c0c> ⌇<#fb1717>⌇ &fNahrávám záznamy s daným
+    filtrem..
+  success-login: <newline><#fb0c0c> ⌇<#fb1717>⌇ <#81e600>Úspěšně přihlášen na vzdáleného
+    poskytovatele..
+  success-upload: <newline><#fb0c0c> ⌇<#fb1717>⌇ <#81e600>Nahrávání dokončeno!
+  success-logout: <newline><#fb0c0c> ⌇<#fb1717>⌇ <#81e600>Úspěšně odhlášen!
+  result-upload: <newline><#fb0c0c> ⌇<#fb1717>⌇ &f%url%
+
+group-chat:
+  already-joined: <newline><#fb0c0c> ⌇<#fb1717>⌇ &fTento hráč již je v této skupině!<newline>
+  not-joined: <newline><#fb0c0c> ⌇<#fb1717>⌇ &fNejseš připojen v žádné skupině!<newline>
+  pattern: <#808080>[<#0085e6>GC<#808080>] <#808080>{<#05e600>%server%<#808080>} <#808080>|
+    <#e67c00>%player% <#808080>» <#0085e6>%message%
+  invited: <newline><#fb0c0c> ⌇<#fb1717>⌇ <#81e600>%player% &fpozval <#81e600>%whom%
+    &fdo této skupiny!
+  invite: <newline><#fb0c0c> ⌇<#fb1717>⌇ <#81e600>%player% &ftě pozval skupiny!
+  not-invited: <newline><#fb0c0c> ⌇<#fb1717>⌇ <#e61000>Do této skupiny jsi nebyl pozván!
+  joined: <newline><#fb0c0c> ⌇<#fb1717>⌇ <#81e600>%player% &fse připojil do této
+    skupiny!
+  not-owner: <newline><#fb0c0c> ⌇<#fb1717>⌇ <#e61000>Na tuto akci musíš být majitelem
+    skupiny!
+  left: <newline><#fb0c0c> ⌇<#fb1717>⌇ <#81e600>%player% &fopustil skupinu!
+  kick: <newline><#fb0c0c> ⌇<#fb1717>⌇ <#81e600>%player% &fbyl vyhozen ze skupiny!
+  specify-user: <newline><#fb0c0c> ⌇<#fb1717>⌇ <#e61000>Specifikuj uživatele!
+  unknown-user: <newline><#fb0c0c> ⌇<#fb1717>⌇ <#e61000>Neznámý uživatel!
+  unknown-group: <newline><#fb0c0c> ⌇<#fb1717>⌇ <#e61000>Neznámá skupina!
+  cant-create-joined: <newline><#fb0c0c> ⌇<#fb1717>⌇ <#e61000>Již jseš v jedné skupině,
+    kliknutím ji opustíš!
+  spy-template: <#707070>[<#e62900>Spy<#707070>] <#707070>[<#0085e6>GC<#707070>] &f%sender%
+    <#707070>» <#a1b3a7>%message%
+  spy-player-list: <#707070>[<#FDAD00>%players%<#707070>]
+  cant-invite-self: <newline><#fb0c0c> ⌇<#fb1717>⌇ <#e61000>Nemůžeš pozvat sám sebe!
+  cant-kick-self: <newline><#fb0c0c> ⌇<#fb1717>⌇ <#e61000>Nemůžeš vyhodit sám sebe!
+  toggled-off: <newline><#fb0c0c> ⌇<#fb1717>⌇ <#81e600>Group Chat Toggle byl vypnut!
+  toggled-on: <newline><#fb0c0c> ⌇<#fb1717>⌇ <#81e600>Group Chat Toggle byl zapnut!
+  info: '<newline><gradient:#0a6e99:#00AAFF>&lꜱᴋᴜᴘɪɴᴏᴠʏ ᴄʜᴀᴛ</bold></gradient><newline>&fVlastník:
+    <#81e600>%owner%<newline>&fHráči: <#81e600>%players%'
+
+limitations-commands:
+  max-uses: <newline><#fb0c0c> ⌇<#fb1717>⌇ <#e61000>Příkaz jsi vykonal příliš mockrát!
+
+features:
+  enabled-pattern: '<gray>Zapnuté vychytávky &f[%count%]: '
+  disabled-pattern: '<gray>Vypnuté vychytávky &f[%count%]: '
+  unknown-feature:
+    - ''
+    - '<#e61000>Neznámá vychytávka'
+    - ''
+
+  already-disabled:
+    - ''
+    - '<#e61000>Vychytávka &f%feature% <#e61000> je již vypnutá!'
+    - ''
+  disabled:
+    - ''
+    - '<#fb0c0c> ⌇<#fb1717>⌇ &fVychytávka %feature% byla vypnuta!'
+    - ''
+  failed-to-disable:
+    - ''
+    - '<#e61000>Nepodařilo se vypnout vychytávku %feature%!'
+    - ''
+
+  enabled:
+    - ''
+    - '<#fb0c0c> ⌇<#fb1717>⌇ &fVychytávka %feature% byla zapnuta!'
+    - ''
+  already-enabled:
+    - ''
+    - '<#e61000>Vychytávka &f%feature% <#e61000>je již zapnuta!'
+    - ''
+  failed-to-enable:
+    - ''
+    - '<#e61000>Nepodařilo se zapnout vychytávku %feature%'
+    - ''
+  cant-execute-disabled-command:
+    - ''
+    - '<#e61000>Tento příkaz je vypnutý'
+    - ''
+
+monitoring:
+  lag:
+    - ''
+    - '<<accent>>CPU: &f%cpu%%'
+    - '<<accent>>RAM (Heap): &f%memory-heap-used% <gray>MB / &f%memory-heap-max% <gray>MB'
+    - '<<accent>>RAM (NonHeap): &f%memory-non-heap-used% <gray>MB / &f%memory-non-heap-max% <gray>MB'
+    - ''

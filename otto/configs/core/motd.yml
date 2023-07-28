@@ -1,0 +1,13 @@
+#Whether to select random MOTD
+random: true
+
+#Motds to choose from
+#
+#USE BUKKIT FORMATTING!!
+# e.g.: &c&lPowered by Otto!
+#
+# For gradients use this website: https://rynstwrt.github.io/Minecraft-Server-MOTD-Gradient-Generator/
+#
+
+motds:
+  - '&x&f&f&9&6&7&1P&x&f&f&9&4&7&3o&x&f&f&9&1&7&5w&x&f&f&8&f&7&7e&x&f&f&8&d&7&9r&x&f&f&8&b&7&ae&x&f&f&8&8&7&cd&x&f&f&8&6&7&e &x&f&f&8&4&8&0b&x&f&f&8&1&8&2y&x&f&f&7&f&8&4 &x&f&f&7&d&8&6O&x&f&f&7&a&8&8t&x&f&f&7&8&8&9t&x&f&f&7&6&8&bo&x&f&f&7&4&8&d!&x&f&f&7&1&8&f'

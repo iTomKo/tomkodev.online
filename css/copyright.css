@@ -1,0 +1,12 @@
+div.copyright {
+    bottom: 1.5%;
+    right: 1.5%;
+    position: fixed;
+    color: white;
+
+    font-size: 12px;
+    font-family: Inconsolata;
+}
+div.copyright p{
+    display: block;
+}

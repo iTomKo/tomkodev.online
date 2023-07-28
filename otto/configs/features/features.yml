@@ -1,0 +1,113 @@
+messaging:
+
+  #Whether direct messages (/msg) are enabled
+  direct-messages: true
+
+  #Whether easier replies (/r) are enabled
+  message-reply: true
+
+  #Whether you can spy players direct messages (/spy)
+  message-spy: true
+
+  #Whether you can create and chat in group chats (/gc)
+  group-chat: true
+
+  #Whether to enable /streamermode -> mutes all incoming messages including Staff Chat
+  streamer-mode: false
+
+#Toggle systems used by staff
+staff:
+
+  #Whether to enable staff systems
+  staff-general: true
+
+  #Whether to enable staff-list (/staff); which shows all online Staff Members
+  staff-list: true
+
+  #Whether to enable staff-chat (/a,/achat,/staffchat); allows staff members to communicate with other staff members secretely
+  staff-chat: true
+
+  #Whether to enable alert commands (/alerttile,/alertmsg)
+  alerts: true
+
+#Toggle Discord-related systems
+discord:
+
+  #Global switch to all discord-related features
+  discord: false
+
+  #Whether discord bot is enabled; crucial to other following discord features
+  discord-bot: true
+
+  #Whether to give linked role to players, that have linked their discord account with Otto
+  linked-role: true
+
+  #Whether to enable discord admin panel (write ".panel" in any chat; ANYONE CAN CLICK IT! BUT NOT CREATE IT)
+  admin-panel: false
+
+  #Whether to enable discord feature, which runs the "post-link commands" to newly linked players
+  execute-link-commands: false
+
+  #Whether to have extra option in the admin panel, which runs the "post-link commands" to all linked players
+  panel-execute-link-commands: false
+
+#Toggle systems player can use
+players:
+
+  #Whether player can see their global statistics
+  statistics: true
+
+  #Whether player can request help from staff via /helpop
+  player-helpop: false
+
+  #Whether to limit some command uses. e.g.: allow some command to be executed just once..
+  command-limitation: false
+
+#Community features
+community:
+
+  #Whether to enable contests; /contest
+  contest: true
+
+#Otto Logging System
+logging:
+
+  #Whether to log player commands
+  command-log: true
+
+  #Whether to enable /otto log command
+  log-lookup: true
+
+#Server Related
+servers:
+
+  #Whether to register commands for easier travelling between servers. e.g.: /survival, /pvp
+  command-server-travel: true
+
+#Utilities, meant for staff
+staff-utilities:
+
+  #Whether to enable /concentration command
+  player-concentration: true
+
+  #Whether to enable /appearance command
+  player-appearance: true
+
+#Whether to allow commands which show performance of the server, such as /otto lag
+server-monitoring:
+
+  #General switch
+  server-monitoring: true
+
+  #Whether to allow command /otto lag, which shows CPU and RAM usage
+  lag: true
+
+#Utilities primary for server managers
+utils:
+
+  #Whether to manage Server MOTD
+  motd: true
+
+  #Whether to enable server-communication-based features: e.g.: /exserver; send command to any server with players and OttoCommunicator installed
+  server-communication: true
+

@@ -1,0 +1,29 @@
+# What locale/language to use
+locale: "locale_CZ"
+
+# Whether Otto should boot in debug mode
+debug-mode: true
+
+# Whether to sort all sub commands in /otto alphabetically
+sort-commands-alphabetically: true
+
+# In case Otto fails to retrieve players prefix and it needs to be shown in some place
+default-prefix: "UNRANKED"
+
+color:
+  #
+  # You can add your own colors! Just copy the primary and secondary and rename them.
+  # Note that large amount of colors can slow down the performance of Otto!
+  #
+  # Example Title Usage:
+  # /alerttitle <gradient:<primary>:<secondary>><bold>Test</bold><reset> %subtitle% <<accent>>Test
+  #
+
+  # Can be used as <primary> in translations or ingame chats
+  primary: "#FF9671"
+
+  # Can be used as <secondary> in translations or ingame chats
+  secondary: "#FF6F91"
+
+  # Can be used as <accent> in translations or ingame chats
+  accent: "#F3D624"

@@ -1,0 +1,175 @@
+#
+
+# You can change different settings (names,aliases,standalone) for each command
+
+#
+
+otto:
+  name: otto
+  aliases:
+    -
+  standalone: true
+
+alertchat:
+  name: alertchat
+  aliases:
+    - alertmsg
+  standalone: true
+
+alerttitle:
+  name: alerttitle
+  aliases:
+    -
+  standalone: true
+
+appearance:
+  name: appearance
+  aliases:
+    - players
+    - playersappearance
+  standalone: true
+
+concentration:
+  name: concentration
+  aliases:
+    -
+  standalone: true
+
+contest:
+  name: contest
+  aliases:
+    -
+  standalone: true
+
+debugger:
+  name: debugger
+  aliases:
+    -
+  standalone: false
+
+dreload:
+  name: dreload
+  aliases:
+    - discordreload
+  standalone: false
+
+exserver:
+  name: exserver
+  aliases:
+    - executeserver
+  standalone: false
+
+features:
+  name: features
+  aliases:
+    -
+  standalone: false
+
+groupchat:
+  name: groupchat
+  aliases:
+    - gc
+    - groupc
+    - gchat
+  standalone: true
+
+helpop:
+  name: helpop
+  aliases:
+    -
+  standalone: true
+
+info:
+  name: info
+  aliases:
+    - discordinfo
+  standalone: false
+
+lag:
+  name: lag
+  aliases:
+    -
+  standalone: false
+
+link:
+  name: link
+  aliases:
+    - discordlink
+  standalone: true
+
+log:
+  name: log
+  aliases:
+    - loglookup
+  standalone: false
+
+msg:
+  name: msg
+  aliases:
+    - message
+  standalone: true
+
+reload:
+  name: reload
+  aliases:
+    -
+  standalone: false
+
+reply:
+  name: reply
+  aliases:
+    - r
+    - rmsg
+  standalone: true
+
+restart:
+  name: restart
+  aliases:
+    -
+  standalone: false
+
+spy:
+  name: spy
+  aliases:
+    - mspy
+  standalone: true
+
+staff:
+  name: staff
+  aliases:
+    - staffonline
+  standalone: true
+
+staffchat:
+  name: staffchat
+  aliases:
+    - achat
+    - schat
+    - ac
+    - a
+  standalone: true
+
+statistics:
+  name: statistics
+  alises:
+    -
+  standalone: true
+
+unlink:
+  name: unlink
+  alises:
+    - discordunlink
+  standalone: false
+
+version:
+  name: version
+  aliases:
+    -
+  standalone: false
+
+whitelist:
+  name: whitelist
+  alises:
+    -
+  standalone: false
+

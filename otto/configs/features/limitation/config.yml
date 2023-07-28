@@ -1,0 +1,7 @@
+commands:
+  example:
+    restart-value: true
+    max-uses: 5
+    restart-on-boot: true
+    permission: ks.example
+    restart-if-not-permitted: true
