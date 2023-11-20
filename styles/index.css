@@ -23,8 +23,7 @@ header img {
     position: absolute;
     width: 5svw;
 
-    padding-left: 6.6svw;
-    padding-top: 2.3svw;
+    min-width: 50px;
 }
 
 section {
@@ -42,6 +41,7 @@ section h3 {
 
 section p {
     padding-left: 1.5svw;
+    padding-right: 10px;;
 }
 
 section li {
@@ -50,7 +50,6 @@ section li {
 
 section li a {
     padding-left: 1svw;
-    font-size: 1.2svw;
     color: rgb(46, 139, 139);
 }
 
