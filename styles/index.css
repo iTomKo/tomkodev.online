@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Inconsolata';
+    src: url(fonts/Inconsolata.otf) format("opentype");
+}
+
+:root {
+    background-color: #171717;
+    color: white;
+    font-family: 'Inconsolata';
+}
+
+header {
+    padding-left: 5svw;
+    padding-top: 1svw;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+header img {
+    position: absolute;
+    width: 5svw;
+
+    padding-left: 6.6svw;
+    padding-top: 2.3svw;
+}
+
+section {
+    padding-top: 2.5svw;
+}
+
+section h3 {
+    color: #E0E0E0;
+    font-size: x-large;
+
+    padding: 15px;
+    background-color: #353535;
+    max-width: max-content;
+}
+
+section p {
+    padding-left: 1.5svw;
+}
+
+section li {
+    list-style-type: none;
+}
+
+section li a {
+    padding-left: 1svw;
+    font-size: 1.2svw;
+    color: rgb(46, 139, 139);
+}
+
+footer {
+    position: absolute;
+    right: 2svw;
+    bottom: 2svw;
+}
+
+.aside p {
+    margin: 0;
+    position: absolute;
+    padding-right: 0;
+    top: 0;
+    right: 0;
+    transform-origin: top left;
+    transform: translate(100%, 0) rotate(90deg);
+    white-space: nowrap;
+}
